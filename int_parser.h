@@ -8,7 +8,8 @@ namespace codemaster{
 class IntParser:public Parser{
 public:
 	bool validate(std::string data_str);
-	Element convert(std::string data_str);
+	Data convert(std::string data_str);
+	~IntParser(){}
 private:
 
 };

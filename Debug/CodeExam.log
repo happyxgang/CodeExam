@@ -1,33 +1,28 @@
-﻿生成启动时间为 2014/10/17 15:32:12。
-     1>项目“C:\Users\xingzhigang\documents\visual studio 2013\Projects\CodeExam\CodeExam\CodeExam.vcxproj”在节点 2 上(ClCompile 个目标)。
+﻿生成启动时间为 2014/10/19 14:43:33。
+     1>项目“C:\Users\xingzhigang\documents\visual studio 2013\Projects\CodeExam\CodeExam\CodeExam.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
-         D:\Visual Studio\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         D:\Visual Studio\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt analyzer.cpp main.cpp pattern.cpp
+         pattern.cpp
+         analyzer.cpp
+         正在生成代码...
+         正在编译...
          main.cpp
-     1>c:\users\xingzhigang\documents\visual studio 2013\projects\codeexam\codeexam\parser.h(14): error C2146: 语法错误: 缺少“;”(在标识符“convert”的前面)
-     1>c:\users\xingzhigang\documents\visual studio 2013\projects\codeexam\codeexam\parser.h(14): error C2433: “codemaster::Parser::Element”: 不允许在数据声明中使用“virtual”
-     1>c:\users\xingzhigang\documents\visual studio 2013\projects\codeexam\codeexam\parser.h(14): error C4430: 缺少类型说明符 - 假定为 int。注意:  C++ 不支持默认 int
-     1>c:\users\xingzhigang\documents\visual studio 2013\projects\codeexam\codeexam\parser.h(14): warning C4183: “convert”:  缺少返回类型；假定为返回“int”的成员函数
-     1>c:\users\xingzhigang\documents\visual studio 2013\projects\codeexam\codeexam\parser.h(15): error C2061: 语法错误: 标识符“Element”
-     1>c:\users\xingzhigang\documents\visual studio 2013\projects\codeexam\codeexam\int_parser.h(8): error C2143: 语法错误 : 缺少“,”(在“<”的前面)
-     1>c:\users\xingzhigang\documents\visual studio 2013\projects\codeexam\codeexam\int_parser.h(11): error C2061: 语法错误: 标识符“string”
-     1>c:\users\xingzhigang\documents\visual studio 2013\projects\codeexam\codeexam\int_element.h(8): error C2512: “codemaster::Parser”: 没有合适的默认构造函数可用
-     1>c:\users\xingzhigang\documents\visual studio 2013\projects\codeexam\codeexam\main.cpp(29): error C2065: “Analyzer”: 未声明的标识符
-     1>c:\users\xingzhigang\documents\visual studio 2013\projects\codeexam\codeexam\main.cpp(29): error C2146: 语法错误: 缺少“;”(在标识符“analyzer”的前面)
-     1>c:\users\xingzhigang\documents\visual studio 2013\projects\codeexam\codeexam\main.cpp(29): error C3861: “analyzer”:  找不到标识符
-     1>c:\users\xingzhigang\documents\visual studio 2013\projects\codeexam\codeexam\main.cpp(47): error C2065: “RowElements”: 未声明的标识符
-     1>c:\users\xingzhigang\documents\visual studio 2013\projects\codeexam\codeexam\main.cpp(47): error C2146: 语法错误: 缺少“;”(在标识符“row”的前面)
-     1>c:\users\xingzhigang\documents\visual studio 2013\projects\codeexam\codeexam\main.cpp(47): error C2065: “row”: 未声明的标识符
-     1>c:\users\xingzhigang\documents\visual studio 2013\projects\codeexam\codeexam\main.cpp(47): error C2065: “analyzer”: 未声明的标识符
-     1>c:\users\xingzhigang\documents\visual studio 2013\projects\codeexam\codeexam\main.cpp(47): error C2228: “.next_row”的左边必须有类/结构/联合
-                 类型是“unknown-type”
-     1>c:\users\xingzhigang\documents\visual studio 2013\projects\codeexam\codeexam\main.cpp(51): error C2065: “row”: 未声明的标识符
-     1>c:\users\xingzhigang\documents\visual studio 2013\projects\codeexam\codeexam\main.cpp(51): error C2228: “.get_value”的左边必须有类/结构/联合
-                 类型是“unknown-type”
-     1>c:\users\xingzhigang\documents\visual studio 2013\projects\codeexam\codeexam\main.cpp(52): error C2065: “row”: 未声明的标识符
-     1>c:\users\xingzhigang\documents\visual studio 2013\projects\codeexam\codeexam\main.cpp(52): error C2228: “.get_value”的左边必须有类/结构/联合
-                 类型是“unknown-type”
-     1>已完成生成项目“C:\Users\xingzhigang\documents\visual studio 2013\Projects\CodeExam\CodeExam\CodeExam.vcxproj”(ClCompile 个目标)的操作 - 失败。
+         正在生成代码...
+       Link:
+         D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\xingzhigang\documents\visual studio 2013\Projects\CodeExam\Debug\CodeExam.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\xingzhigang\documents\visual studio 2013\Projects\CodeExam\Debug\CodeExam.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\xingzhigang\documents\visual studio 2013\Projects\CodeExam\Debug\CodeExam.lib" /MACHINE:X86 Debug\analyzer.obj
+         Debug\data.obj
+         Debug\data_stream.obj
+         Debug\element.obj
+         Debug\int_element.obj
+         Debug\int_parser.obj
+         Debug\main.obj
+         Debug\parser.obj
+         Debug\pattern.obj
+         Debug\row_data.obj
+         Debug\shared_ptr.obj
+         CodeExam.vcxproj -> C:\Users\xingzhigang\documents\visual studio 2013\Projects\CodeExam\Debug\CodeExam.exe
+     1>已完成生成项目“C:\Users\xingzhigang\documents\visual studio 2013\Projects\CodeExam\CodeExam\CodeExam.vcxproj”(Build 个目标)的操作。
 
-生成失败。
+生成成功。
 
-已用时间 00:00:01.62
+已用时间 00:00:01.90

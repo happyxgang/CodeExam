@@ -65,20 +65,29 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="analyzer.cpp" />
+    <ClCompile Include="data.cpp" />
     <ClCompile Include="data_stream.cpp" />
+    <ClCompile Include="element.cpp" />
     <ClCompile Include="int_element.cpp" />
     <ClCompile Include="int_parser.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="parser.cpp" />
+    <ClCompile Include="pattern.cpp" />
+    <ClCompile Include="row_data.cpp" />
+    <ClCompile Include="shared_ptr.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="analyzer.h" />
+    <ClInclude Include="data.h" />
     <ClInclude Include="data_stream.h" />
     <ClInclude Include="element.h" />
     <ClInclude Include="int_element.h" />
     <ClInclude Include="int_parser.h" />
     <ClInclude Include="parser.h" />
     <ClInclude Include="pattern.h" />
+    <ClInclude Include="row_data.h" />
+    <ClInclude Include="shared_ptr.h" />
+    <ClInclude Include="uncopyable.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

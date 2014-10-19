@@ -1,11 +1,20 @@
+#include <string>
 #include "parser.h"
 namespace codemaster{
-bool Parser::parse(Element& val){
-	if (validate(_data_str)){
-		val = convert(_data_str);
+bool Parser::parse(std::string data_str, Data& val){
+	if (validate(data_str)){
+		val = convert(data_str);
 		return true;
 	} else{
 		return false;
 	}
 }
+
+bool Parser::validate(std::string data_str){
+	return true;
+}
+Data Parser::convert(std::string data_str){
+	return Data();
+}
+
 }

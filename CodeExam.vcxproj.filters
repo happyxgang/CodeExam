@@ -33,6 +33,21 @@
     <ClCompile Include="data_stream.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="pattern.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="element.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="row_data.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="data.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="shared_ptr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="int_element.h">
@@ -54,6 +69,18 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="data_stream.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="uncopyable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="data.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="row_data.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="shared_ptr.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

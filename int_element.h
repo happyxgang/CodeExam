@@ -5,10 +5,10 @@
 namespace codemaster{
 class IntElement:public Element{
 public:
-	IntElement() :Element(ELE_INT){}
+	// TODO: parser can be replace by global single instance
+	IntElement() :Element(new IntParser()){}
 	//TODO:check the right format: if there's a space between right parenthese and right brace;
 private:
-	Parser parser;
 };
 }
 #endif

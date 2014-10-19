@@ -16,8 +16,12 @@ bool IntParser::validate(std::string data_str){
 	return !data_str.empty() && it == data_str.end();
 }
 
-int convert(string data_str){
+Data IntParser::convert(string data_str){
 	// simple convert using atoi 
-	return atoi(data_str.c_str());
+	Data data(DATA_INT);
+	int* val = new int;
+	*val = atoi(data_str.c_str());
+	data.set_data((void*)val);
+	return data;
 }
 }
