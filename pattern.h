@@ -6,9 +6,10 @@
 namespace codemaster{
 class Pattern{
 public:
-	typedef std::vector<Element*>::iterator iterator;
-	// typedef std::vector<Element*>::const_iterator const_iterator;
+	typedef std::vector<SharedPtr<Element*> >::iterator iterator;
+	//typedef std::vector<Element*>::const_iterator const_iterator;
 
+	~Pattern();
 	// TODO: try to eliminate order dependency
 	void append(Element* ele){
 		_ele_list.push_back(ele);
@@ -22,9 +23,8 @@ public:
 	int size() const{
 		return _ele_list.size();
 	}
-	~Pattern();
 private:
-	std::vector<Element*> _ele_list;
+	std::vector<SharedPtr<Element*>> _ele_list;
 };
 }
 #endif

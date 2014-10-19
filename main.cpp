@@ -91,8 +91,12 @@ bool test_int_parser(){
 	RowData rd = analyzer.next_row(skip_num);
 	
 	Data d;
-	int ret = rd.get(1, d);
-	cout << *(int*)*d << endl;
+	if (rd.get(1, d)){
+		cout << *(int*)*d << endl;
+	}
+	if (rd.get(0, d)){
+		cout << *(int*)*d << endl;
+	}
 	return true;
 }
 bool test_data(){

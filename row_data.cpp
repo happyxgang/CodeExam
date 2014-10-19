@@ -8,11 +8,13 @@ RowData::RowData(const RowData& row_data){
 }
 RowData::~RowData(){
 }
-int RowData::get(size_t num, Data& data){
-	if (num > this->_content.size()){
-		return -1;
+
+// index starts from 0 to _content.size() - 1
+bool RowData::get(size_t index, Data& data){
+	if (index >= this->_content.size()){
+		return false;
 	}
-	data = this->_content[num];
-	return 0;
+	data = this->_content[index];
+	return true;
 }
 }

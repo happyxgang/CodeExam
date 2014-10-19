@@ -8,7 +8,7 @@ class IntElement:public Element{
 public:
 	// TODO: parser can be replace by global single instance
 	IntElement() :Element(new IntParser()){}
-	~IntElement(){ std::cout << "deconstructor in IntElement" << std::endl; }
+	~IntElement(){}
 private:
 };
 }

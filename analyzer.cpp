@@ -49,7 +49,7 @@ bool Analyzer::convert(Pattern& pattern, vector<string>& items, RowData& row_dat
 	// process every element using proper element parser
 	// return true only if all items are proper handled
 	while (itr_pattern != pattern.end()) {
-		Element* ele = *itr_pattern++;
+		Element* ele = *(*itr_pattern++);
 		string str = *itr_items;
 
 		Data data;
