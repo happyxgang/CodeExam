@@ -12,7 +12,7 @@ namespace codemaster{
 
 class DataStream{
 public:
-	DataStream(std::string filename ):_file(filename){}
+	DataStream(std::string filename ):_file(filename), _delimeter(_default_delimeter){}
 	~DataStream(){}
 
 	bool next_line(std::vector<std::string>& items);

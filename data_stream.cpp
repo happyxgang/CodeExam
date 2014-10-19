@@ -29,6 +29,7 @@ void DataStream::set_delimeter(char ch){
 //	data_stream.set_delimeter(ch);
 //	return data_stream;
 //}
+char DataStream::_default_delimeter = '\t';
 void DataStream::split(string line, vector<string>& items){
 		string item;
 		std::istringstream ss(line);

@@ -31,12 +31,15 @@ Data::~Data(){
 // possible solution: use shared_ptr 
 Data::Data(const Data& data){
 	this->_data = data._data;
+	this->_type = data._type;
 }
 Data& Data::operator=(Data& data){
 	if (this == &data){
 		return *this;
 	}
 	this->_data = data._data;
+	this->_type = data._type;
+
 	return *this;
 }
 }

@@ -18,14 +18,14 @@ enum DataType
 class Data{
 public:
 	Data():_type(DATA_INIT){}
-	Data(DataType type) :_data(NULL), _type(type){}
+	Data(DataType type):_type(type){}
 	// this is a move operation
 	Data(const Data& data);
 	Data& operator=(Data& d);
 	~Data();
-
+	void* operator*(){ return *_data; }
 	SharedPtr<void*> data(){ return _data; }
-	void set_data(void* data){ SharedPtr<void*> ptr(data); }
+	void set_data(void* data){ SharedPtr<void*> ptr; ptr.set_val(data); _data = ptr; }
 private:
 	SharedPtr<void*> _data;
 	DataType _type;
