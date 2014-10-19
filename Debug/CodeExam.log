@@ -1,23 +1,9 @@
-﻿Build started 2014/10/19 18:26:08.
+﻿Build started 2014/10/20 0:05:55.
      1>Project "C:\Users\xingzhigang\documents\visual studio 2013\Projects\CodeExam\CodeExam\CodeExam.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         D:\Visual Studio\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt row_data.cpp
-         row_data.cpp
-       Link:
-         D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\xingzhigang\documents\visual studio 2013\Projects\CodeExam\Debug\CodeExam.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\xingzhigang\documents\visual studio 2013\Projects\CodeExam\Debug\CodeExam.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\xingzhigang\documents\visual studio 2013\Projects\CodeExam\Debug\CodeExam.lib" /MACHINE:X86 Debug\analyzer.obj
-         Debug\data.obj
-         Debug\data_stream.obj
-         Debug\element.obj
-         Debug\int_element.obj
-         Debug\int_parser.obj
-         Debug\main.obj
-         Debug\parser.obj
-         Debug\pattern.obj
-         Debug\row_data.obj
-         Debug\shared_ptr.obj
+     1>Link:
          CodeExam.vcxproj -> C:\Users\xingzhigang\documents\visual studio 2013\Projects\CodeExam\Debug\CodeExam.exe
      1>Done Building Project "C:\Users\xingzhigang\documents\visual studio 2013\Projects\CodeExam\CodeExam\CodeExam.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.78
+Time Elapsed 00:00:00.09

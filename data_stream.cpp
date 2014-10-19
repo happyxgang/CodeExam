@@ -1,6 +1,9 @@
+#include "data_stream.h"
+
 #include <iostream>
 #include <sstream>
-#include "data_stream.h"
+
+#include "utility.h"
 using std::string;
 using std::vector;
 using std::ifstream;
@@ -30,22 +33,24 @@ void DataStream::set_delimeter(char ch){
 //	return data_stream;
 //}
 char DataStream::_default_delimeter = '\t';
-void DataStream::split(string line, vector<string>& items){
-		string item;
-		std::istringstream ss(line);
-		while (std::getline(ss, item, this->_delimeter)) {
-			items.push_back(item);
-		}
-}
+//vector<string> DataStream::split(string line, char delim){
+//	vector<string> items;
+//	string item;
+//	std::istringstream ss(line);
+//	while (std::getline(ss, item, delim)) {
+//		items.push_back(item);
+//	}
+//	return items;
+//}
 
-// 
 bool DataStream::next_line(vector<string>& items){
 	string line;
 	if (std::getline(this->_file, line)) {
-		split(line, items);
+		items = split(line, this->_delimeter);
 	} else {
 		return false;
 	}
 	return true;
 }
+
 }

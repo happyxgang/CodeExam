@@ -1,6 +1,7 @@
+#include "analyzer.h"
+
 #include <fstream>
 #include <string>
-#include "analyzer.h"
 #include "data_stream.h"
 using std::ifstream;
 using std::string;

@@ -38,15 +38,21 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <SourcePath>$(VC_SourcePath)/src;$(SourcePath)</SourcePath>
+    <IncludePath>$(VC_IncludePath)/test;$(VC_IncludePath)/include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\xingzhigang\Desktop\gtest-1.7.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>C:\Users\xingzhigang\Desktop\gtest-1.7.0\msvc\gtest\Debug\gtestd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -64,30 +70,35 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="analyzer.cpp" />
-    <ClCompile Include="data.cpp" />
-    <ClCompile Include="data_stream.cpp" />
-    <ClCompile Include="element.cpp" />
-    <ClCompile Include="int_element.cpp" />
-    <ClCompile Include="int_parser.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="parser.cpp" />
-    <ClCompile Include="pattern.cpp" />
-    <ClCompile Include="row_data.cpp" />
-    <ClCompile Include="shared_ptr.cpp" />
+    <ClCompile Include="src\analyzer.cpp" />
+    <ClCompile Include="src\array_parser.cpp" />
+    <ClCompile Include="src\data.cpp" />
+    <ClCompile Include="src\data_stream.cpp" />
+    <ClCompile Include="src\element.cpp" />
+    <ClCompile Include="src\int_element.cpp" />
+    <ClCompile Include="src\int_parser.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\parser.cpp" />
+    <ClCompile Include="src\pattern.cpp" />
+    <ClCompile Include="src\row_data.cpp" />
+    <ClCompile Include="src\utility.cpp" />
+    <ClCompile Include="test_utility.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="analyzer.h" />
-    <ClInclude Include="data.h" />
-    <ClInclude Include="data_stream.h" />
-    <ClInclude Include="element.h" />
-    <ClInclude Include="int_element.h" />
-    <ClInclude Include="int_parser.h" />
-    <ClInclude Include="parser.h" />
-    <ClInclude Include="pattern.h" />
-    <ClInclude Include="row_data.h" />
-    <ClInclude Include="shared_ptr.h" />
-    <ClInclude Include="uncopyable.h" />
+    <ClInclude Include="include\analyzer.h" />
+    <ClInclude Include="include\array_element.h" />
+    <ClInclude Include="include\array_parser.h" />
+    <ClInclude Include="include\data.h" />
+    <ClInclude Include="include\data_stream.h" />
+    <ClInclude Include="include\element.h" />
+    <ClInclude Include="include\int_element.h" />
+    <ClInclude Include="include\int_parser.h" />
+    <ClInclude Include="include\parser.h" />
+    <ClInclude Include="include\pattern.h" />
+    <ClInclude Include="include\row_data.h" />
+    <ClInclude Include="include\shared_ptr.h" />
+    <ClInclude Include="include\uncopyable.h" />
+    <ClInclude Include="include\utility.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

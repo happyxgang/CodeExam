@@ -1,5 +1,6 @@
-#include <string>
 #include "parser.h"
+
+#include <string>
 namespace codemaster{
 bool Parser::parse(std::string data_str, Data& val){
 	if (validate(data_str)){

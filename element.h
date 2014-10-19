@@ -8,7 +8,7 @@ namespace codemaster{
 class Element{
 public:
 	Element(Parser* parser) :_parser(parser){}
-	virtual ~Element(){ std::cout << "deconstructor in Element" << std::endl; delete _parser; }
+	virtual ~Element(){ delete _parser; }
 
 	// convert from str to proper data using _parser
 	bool convert(std::string str, Data& data);

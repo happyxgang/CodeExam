@@ -13,74 +13,92 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Test">
+      <UniqueIdentifier>{72880057-1a32-497a-b392-0f6afa29f1cc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="src\analyzer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="parser.cpp">
+    <ClCompile Include="src\array_parser.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="int_parser.cpp">
+    <ClCompile Include="src\data.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="analyzer.cpp">
+    <ClCompile Include="src\data_stream.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="int_element.cpp">
+    <ClCompile Include="src\element.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="data_stream.cpp">
+    <ClCompile Include="src\int_element.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="pattern.cpp">
+    <ClCompile Include="src\int_parser.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="element.cpp">
+    <ClCompile Include="src\main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="row_data.cpp">
+    <ClCompile Include="src\parser.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="data.cpp">
+    <ClCompile Include="src\pattern.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="shared_ptr.cpp">
+    <ClCompile Include="src\row_data.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utility.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test_utility.cpp">
+      <Filter>Test</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="int_element.h">
+    <ClInclude Include="include\analyzer.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="element.h">
+    <ClInclude Include="include\array_element.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="parser.h">
+    <ClInclude Include="include\array_parser.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="int_parser.h">
+    <ClInclude Include="include\data.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="pattern.h">
+    <ClInclude Include="include\data_stream.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="analyzer.h">
+    <ClInclude Include="include\element.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="data_stream.h">
+    <ClInclude Include="include\int_element.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="uncopyable.h">
+    <ClInclude Include="include\int_parser.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="data.h">
+    <ClInclude Include="include\parser.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="row_data.h">
+    <ClInclude Include="include\pattern.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="shared_ptr.h">
+    <ClInclude Include="include\row_data.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\shared_ptr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\uncopyable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utility.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

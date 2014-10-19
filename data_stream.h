@@ -19,7 +19,7 @@ public:
 private:
 	void set_file(std::string file);
 	void set_delimeter(char c);
-	void split(std::string, std::vector<std::string>& items);
+//	vector<string> split(std::string, char delim);
 
 	std::ifstream _file;
 	char _delimeter;

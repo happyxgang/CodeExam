@@ -1,5 +1,7 @@
-#include <memory>
 #include "data.h"
+
+#include <memory>
+
 namespace codemaster{
 Data::~Data(){
 	//switch (_type) {
