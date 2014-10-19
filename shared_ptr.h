@@ -32,11 +32,11 @@ void SharedPtr<Type>::set_val(Type val){
 }
 template<typename Type>
 SharedPtr<Type>::SharedPtr(const SharedPtr<Type>& shared_ptr){
-	std::cout << " using copy constructor " << std::endl;
+	//std::cout << " using copy constructor " << std::endl;
 	this->_count = shared_ptr._count;
-	std::cout << "before assign: " << *(this->_count) << std::endl;
+	//std::cout << "before assign: " << *(this->_count) << std::endl;
 	*(this->_count) = *(this->_count) + 1;
-	std::cout << "after assign: " << *(this->_count) << std::endl;
+	//std::cout << "after assign: " << *(this->_count) << std::endl;
 	this->_ptr = shared_ptr._ptr;
 }
 template<typename Type>
@@ -50,7 +50,7 @@ SharedPtr<Type>::~SharedPtr(){
 }
 template<typename Type>
 SharedPtr<Type>& SharedPtr<Type>::operator=(const SharedPtr<Type>& shared_ptr){
-	std::cout << "using operator = " << std::endl;
+	//std::cout << "using operator = " << std::endl;
 	// increase right ptr's count first to avoid delete the same object;
 	++*(shared_ptr._count);
 

@@ -10,7 +10,7 @@ public:
 	RowData(const RowData& row_data);
 
 	void push_back(Data data){ _content.push_back(data); }
-	int get(int num, Data& data);
+	int get(size_t num, Data& data);
 	void clear(){ _content.clear(); }
 	std::vector<Data> content();
 private:

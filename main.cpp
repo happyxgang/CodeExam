@@ -78,44 +78,48 @@ bool test_data_stream(){
 	return true;
 }
 bool test_int_parser(){
-	//std::string file = "D://test_data_stream.txt";
-	//Pattern p;
-	//IntElement* ele_int1 = new IntElement();
-	//IntElement* ele_int2 = new IntElement();
-	//
-	//p.append(ele_int1);
-	//p.append(ele_int2);
-	//
-	//Analyzer analyzer(p, file);
-	//int skip_num = 0;
-	//RowData rd = analyzer.next_row(skip_num);
-	//
-	//Data d;
-	//int ret = rd.get(1, d);
-	//cout << (int)*d << endl;
+	std::string file = "D://test_data_stream.txt";
+	Pattern p;
+	IntElement* ele_int1 = new IntElement();
+	IntElement* ele_int2 = new IntElement();
+	
+	p.append(ele_int1);
+	p.append(ele_int2);
+	
+	Analyzer analyzer(p, file);
+	int skip_num = 0;
+	RowData rd = analyzer.next_row(skip_num);
+	
+	Data d;
+	int ret = rd.get(1, d);
+	cout << *(int*)*d << endl;
 	return true;
 }
 bool test_data(){
 	Data d;
 	int* p = new int(127);
 	d.set_data((void*)p);
-	int * p2 = (int*)*d;
-	cout << p2 << endl;
+	int *p2 = (int*)*d;
+	cout << *p2 << endl;
 	return 0;
+}
+SharedPtr<void*> test_make_shared(void* p){
+	SharedPtr<void*> shared_ptr;
+	shared_ptr.set_val(p);
+	return shared_ptr;
 }
 bool test_shared_ptr(){
 	int* a = new int(32);
-	SharedPtr<void*> p;
-	p.set_val((void*)a);
-	SharedPtr<void*> p2=p;
-	cout << *((int*)*p2) << endl;
+	SharedPtr<void*> p = test_make_shared((void*)a);
 	cout << *((int*)*p) << endl;
 	return true;
 }
 int main(){
+	
 	//test_data_stream();
 	//test_data();
-	test_shared_ptr();
+	//test_shared_ptr();
+	test_int_parser();
 	getchar();
 	return 0;
 }
