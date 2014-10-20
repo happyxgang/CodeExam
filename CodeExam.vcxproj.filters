@@ -18,88 +18,117 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\analyzer.cpp">
+    <ClCompile Include="analyzer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\array_parser.cpp">
+    <ClCompile Include="array_parser.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\data.cpp">
+    <ClCompile Include="data.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\data_stream.cpp">
+    <ClCompile Include="data_stream.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\element.cpp">
+    <ClCompile Include="element.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\int_element.cpp">
+    <ClCompile Include="int_parser.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\int_parser.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\main.cpp">
+    <ClCompile Include="parser.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\parser.cpp">
+    <ClCompile Include="pattern.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\pattern.cpp">
+    <ClCompile Include="row_data.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\row_data.cpp">
+    <ClCompile Include="utility.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\utility.cpp">
+    <ClCompile Include="user_data_parser.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="test_utility.cpp">
+    <ClCompile Include="test_analyzer.h">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_array_parser.h">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_utility.h">
       <Filter>Test</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\analyzer.h">
+    <ClInclude Include="analyzer.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\array_element.h">
+    <ClInclude Include="array_element.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\array_parser.h">
+    <ClInclude Include="array_parser.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\data.h">
+    <ClInclude Include="data.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\data_stream.h">
+    <ClInclude Include="data_stream.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\element.h">
+    <ClInclude Include="element.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\int_element.h">
+    <ClInclude Include="int_data.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\int_parser.h">
+    <ClInclude Include="int_element.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\parser.h">
+    <ClInclude Include="int_parser.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\pattern.h">
+    <ClInclude Include="parser.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\row_data.h">
+    <ClInclude Include="pattern.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\shared_ptr.h">
+    <ClInclude Include="row_data.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\uncopyable.h">
+    <ClInclude Include="shared_ptr.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="include\utility.h">
+    <ClInclude Include="utility.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="user_data_parser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="user_data_element.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="test_user_data_parser.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="test_data_stream.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="test_array.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="test_analyzer_int_int.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="test_int_parser.h">
+      <Filter>Test</Filter>
+    </Text>
   </ItemGroup>
 </Project>

@@ -16,7 +16,6 @@ public:
 	Analyzer(const Pattern& p, std::string file_name) :_pattern(p), _data_stream(file_name){};
 	~Analyzer(){};
 
-	
 	RowData next_row(int& skip_num);
 private:
 	// use proper parser in pattern to parse every element in items and store in row_data

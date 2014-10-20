@@ -3,6 +3,7 @@
 #include <memory>
 #include "shared_ptr.h"
 namespace codemaster{
+
 enum DataType 
 {
 	DATA_INIT,//Invalid init data type
@@ -30,5 +31,6 @@ private:
 	SharedPtr<void*> _data;
 	DataType _type;
 };
+
 }
 #endif

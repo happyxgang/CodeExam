@@ -39,8 +39,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <SourcePath>$(VC_SourcePath)/src;$(SourcePath)</SourcePath>
-    <IncludePath>$(VC_IncludePath)/test;$(VC_IncludePath)/include;$(IncludePath)</IncludePath>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <SourcePath>$(VC_SourcePath);$(SourcePath)</SourcePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -70,35 +70,46 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\analyzer.cpp" />
-    <ClCompile Include="src\array_parser.cpp" />
-    <ClCompile Include="src\data.cpp" />
-    <ClCompile Include="src\data_stream.cpp" />
-    <ClCompile Include="src\element.cpp" />
-    <ClCompile Include="src\int_element.cpp" />
-    <ClCompile Include="src\int_parser.cpp" />
-    <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\parser.cpp" />
-    <ClCompile Include="src\pattern.cpp" />
-    <ClCompile Include="src\row_data.cpp" />
-    <ClCompile Include="src\utility.cpp" />
-    <ClCompile Include="test_utility.cpp" />
+    <ClCompile Include="analyzer.cpp" />
+    <ClCompile Include="array_parser.cpp" />
+    <ClCompile Include="data.cpp" />
+    <ClCompile Include="data_stream.cpp" />
+    <ClCompile Include="element.cpp" />
+    <ClCompile Include="int_parser.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="parser.cpp" />
+    <ClCompile Include="pattern.cpp" />
+    <ClCompile Include="row_data.cpp" />
+    <ClCompile Include="test_analyzer.h" />
+    <ClCompile Include="test_array_parser.h" />
+    <ClCompile Include="test_utility.h" />
+    <ClCompile Include="user_data_parser.cpp" />
+    <ClCompile Include="utility.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\analyzer.h" />
-    <ClInclude Include="include\array_element.h" />
-    <ClInclude Include="include\array_parser.h" />
-    <ClInclude Include="include\data.h" />
-    <ClInclude Include="include\data_stream.h" />
-    <ClInclude Include="include\element.h" />
-    <ClInclude Include="include\int_element.h" />
-    <ClInclude Include="include\int_parser.h" />
-    <ClInclude Include="include\parser.h" />
-    <ClInclude Include="include\pattern.h" />
-    <ClInclude Include="include\row_data.h" />
-    <ClInclude Include="include\shared_ptr.h" />
-    <ClInclude Include="include\uncopyable.h" />
-    <ClInclude Include="include\utility.h" />
+    <ClInclude Include="analyzer.h" />
+    <ClInclude Include="array_element.h" />
+    <ClInclude Include="array_parser.h" />
+    <ClInclude Include="data.h" />
+    <ClInclude Include="data_stream.h" />
+    <ClInclude Include="element.h" />
+    <ClInclude Include="int_data.h" />
+    <ClInclude Include="int_element.h" />
+    <ClInclude Include="int_parser.h" />
+    <ClInclude Include="parser.h" />
+    <ClInclude Include="pattern.h" />
+    <ClInclude Include="row_data.h" />
+    <ClInclude Include="shared_ptr.h" />
+    <ClInclude Include="test_user_data_parser.h" />
+    <ClInclude Include="user_data_element.h" />
+    <ClInclude Include="user_data_parser.h" />
+    <ClInclude Include="utility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="test_analyzer_int_int.txt" />
+    <Text Include="test_array.txt" />
+    <Text Include="test_data_stream.txt" />
+    <Text Include="test_int_parser.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

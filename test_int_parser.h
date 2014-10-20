@@ -1,3 +1,5 @@
+#ifndef TEST_INT_PARSER_H
+#define TEST_INT_PARSER_H
 #include <gtest/gtest.h>
 #include "int_parser.h"
 using namespace codemaster;
@@ -16,3 +18,4 @@ TEST_F(test_int_parser, validate){
 TEST_F(test_int_parser, convert){
 
 }
+#endif
