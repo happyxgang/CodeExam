@@ -75,14 +75,18 @@
     <ClCompile Include="data.cpp" />
     <ClCompile Include="data_stream.cpp" />
     <ClCompile Include="element.cpp" />
+    <ClCompile Include="float_parser.cpp" />
     <ClCompile Include="int_parser.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="parser.cpp" />
     <ClCompile Include="pattern.cpp" />
     <ClCompile Include="row_data.cpp" />
+    <ClCompile Include="string_parser.cpp" />
     <ClCompile Include="test_analyzer.h" />
     <ClCompile Include="test_array_parser.h" />
     <ClCompile Include="test_utility.h" />
+    <ClCompile Include="uint32_parser.cpp" />
+    <ClCompile Include="uint64_parser.cpp" />
     <ClCompile Include="user_data_parser.cpp" />
     <ClCompile Include="utility.cpp" />
   </ItemGroup>
@@ -93,6 +97,8 @@
     <ClInclude Include="data.h" />
     <ClInclude Include="data_stream.h" />
     <ClInclude Include="element.h" />
+    <ClInclude Include="float_element.h" />
+    <ClInclude Include="float_parser.h" />
     <ClInclude Include="int_data.h" />
     <ClInclude Include="int_element.h" />
     <ClInclude Include="int_parser.h" />
@@ -100,16 +106,26 @@
     <ClInclude Include="pattern.h" />
     <ClInclude Include="row_data.h" />
     <ClInclude Include="shared_ptr.h" />
+    <ClInclude Include="string_element.h" />
+    <ClInclude Include="string_parser.h" />
+    <ClInclude Include="test_float_parser.h" />
+    <ClInclude Include="test_string_parser.h" />
     <ClInclude Include="test_user_data_parser.h" />
+    <ClInclude Include="uint32_element.h" />
+    <ClInclude Include="uint32_parser.h" />
+    <ClInclude Include="uint64_element.h" />
+    <ClInclude Include="uint64_parser.h" />
     <ClInclude Include="user_data_element.h" />
     <ClInclude Include="user_data_parser.h" />
     <ClInclude Include="utility.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="test_analyzer_int_int.txt" />
+    <Text Include="test_22.txt" />
     <Text Include="test_array.txt" />
     <Text Include="test_data_stream.txt" />
+    <Text Include="test_float_array_int.txt" />
     <Text Include="test_int_parser.h" />
+    <Text Include="test_int_point.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

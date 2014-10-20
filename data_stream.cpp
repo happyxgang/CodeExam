@@ -15,7 +15,6 @@ void DataStream::set_file(string filename){
 	this->_file.open(filename);
 	if (this->_file.fail()){
 		// TODO: handle error properly
-		std::cout << "set file failed" << std:: endl;
 		exit(1);
 	}
 }
@@ -28,6 +27,10 @@ bool DataStream::next_line(vector<string>& items){
 	string line;
 	if (std::getline(this->_file, line)) {
 		items = split(line, this->_delimeter);
+
+		for (size_t index = 0; index < items.size(); index++){
+			items[index] = trim(items[index]);
+		}
 	} else {
 		return false;
 	}

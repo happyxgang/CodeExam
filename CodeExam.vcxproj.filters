@@ -63,6 +63,18 @@
     <ClCompile Include="test_utility.h">
       <Filter>Test</Filter>
     </ClCompile>
+    <ClCompile Include="uint32_parser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="uint64_parser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="string_parser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="float_parser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="analyzer.h">
@@ -116,6 +128,36 @@
     <ClInclude Include="test_user_data_parser.h">
       <Filter>Test</Filter>
     </ClInclude>
+    <ClInclude Include="uint32_parser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="uint32_element.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="string_element.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="string_parser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="uint64_parser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="test_string_parser.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="uint64_element.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="float_element.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="float_parser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="test_float_parser.h">
+      <Filter>Test</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="test_data_stream.txt">
@@ -124,11 +166,17 @@
     <Text Include="test_array.txt">
       <Filter>资源文件</Filter>
     </Text>
-    <Text Include="test_analyzer_int_int.txt">
-      <Filter>资源文件</Filter>
-    </Text>
     <Text Include="test_int_parser.h">
       <Filter>Test</Filter>
+    </Text>
+    <Text Include="test_22.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="test_int_point.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="test_float_array_int.txt">
+      <Filter>资源文件</Filter>
     </Text>
   </ItemGroup>
 </Project>

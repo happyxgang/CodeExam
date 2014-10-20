@@ -13,7 +13,7 @@ namespace codemaster{
 class RowElements;
 class Analyzer{
 public:
-	Analyzer(const Pattern& p, std::string file_name) :_pattern(p), _data_stream(file_name){};
+	Analyzer(const Pattern& p, std::string file_name) : _pattern(p), _data_stream(file_name){};
 	~Analyzer(){};
 
 	RowData next_row(int& skip_num);

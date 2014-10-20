@@ -7,7 +7,7 @@ const int INIT_COUNT = 1;
 template<typename Type>
 class SharedPtr{
 public:
-	SharedPtr():_count(new int(INIT_COUNT)), _ptr(NULL){}
+	SharedPtr() : _count(new int(INIT_COUNT)), _ptr(NULL){}
 	SharedPtr(Type val):_count(new int(INIT_COUNT)), _ptr(new Type()){ *_ptr = val; }
 	SharedPtr(const SharedPtr<Type>& shared_ptr);
 	SharedPtr<Type>& operator=(const SharedPtr<Type>& shared_ptr);

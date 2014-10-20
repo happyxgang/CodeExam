@@ -6,9 +6,9 @@
 
 namespace codemaster{
 typedef void*(*ParserFunc)(std::string);
-class UserDataParser:public Parser{
+class UserDataParser : public Parser{
 public:
-	UserDataParser(ParserFunc parser_func) :_parser_func(parser_func){}
+	UserDataParser(ParserFunc parser_func) : _parser_func(parser_func){}
 	Data convert(std::string data_str);
 private:
 	ParserFunc _parser_func;

@@ -1,15 +1,15 @@
-#ifndef INT_PARSER_H
-#define INT_PARSER_H
+#ifndef FLOAT_PARSER_H
+#define FLOAT_PARSER_H
 #include <string>
 #include "parser.h"
 
 namespace codemaster{
 
-class IntParser : public Parser{
+class FloatParser:public Parser{
 public:
 	bool validate(std::string data_str);
 	Data convert(std::string data_str);
-	~IntParser(){}
+	~FloatParser(){}
 private:
 
 };

@@ -3,6 +3,7 @@
 #include <sstream>
 #include <string>
 #include <vector>
+#include <math.h>
 
 using std::vector;
 using std::string;
@@ -34,6 +35,20 @@ vector<string> split(string line, char delim){
 	}
 	return items;
 }
+string trim(const string& str){
+	string::size_type pos = str.find_first_not_of(' ');
+	if (pos == string::npos)
+	{
+		return str;
+	}
+	string::size_type pos2 = str.find_last_not_of(' ');
+	if (pos2 != string::npos)
+	{
+		return str.substr(pos, pos2 - pos + 1);
+	}
+	return str.substr(pos);
+}
+
 int to_int(string data_str){
 	return atoi(data_str.c_str());
 }
@@ -91,6 +106,7 @@ bool is_uint32(string data_str){
 bool is_uint64(string data_str){
 	return is_uint(data_str);
 }
+
 bool is_float(string data_str){
 	if (is_int(data_str)){
 		return true;
@@ -111,5 +127,24 @@ bool is_float(string data_str){
 		return is_int(data_str.substr(0, point_pos)) && is_int(data_str.substr(point_pos + 1));
 	}
 }
+float to_float(string data_str){
 
+	int point_pos = data_str.find('.');
+	
+	if (point_pos == string::npos){
+		return (float)to_int(data_str);
+	}
+
+	if (point_pos == 0){
+		float right_part = to_int(data_str.substr(1));
+		right_part = right_part / (std::pow(10 ,data_str.size()-1));
+		return right_part;
+	} else if (point_pos == data_str.size() - 1){
+		return (float)to_int(data_str.substr(0, data_str.size() - 1));
+	} else {
+		float int_part = to_int(data_str.substr(0,point_pos));
+		float point_part = to_int(data_str.substr(point_pos + 1)) / (std::pow(10, data_str.size() - point_pos - 1));
+		return int_part + point_part;
+	}
+}
 }
